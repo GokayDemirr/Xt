@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.tree-container {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.tree {
+  display: block;
+  width: 40rem;
+  margin: 0 auto;
+}
+
+audio {
+  position: absolute;
+  left: 5%;
+  z-index: 12;
+  opacity: 40%;
+  top: 5%;
+}
+
+.img1 {
+  position: absolute; /* Konumlandırma için gerekli */
+  top: 17%;
+  left: 33%;
+  z-index: 2; /* Ağacın üstünde görünmesi için */
+  width: 6rem;
+  transform: rotate(-13deg);
+  border: 0.25rem solid white;
+}
+
+.img2 {
+  position: absolute; /* Konumlandırma için gerekli */
+  top: 45%;
+  left: 28%;
+  z-index: 2; /* Ağacın üstünde görünmesi için */
+  width: 5rem;
+  transform: rotate(-18deg);
+  border: 0.25rem solid white;
+}
+
+.img3 {
+  position: absolute; /* Konumlandırma için gerekli */
+  top: 35%;
+  left: 52%;
+  z-index: 2; /* Ağacın üstünde görünmesi için */
+  width: 6rem;
+  transform: rotate(33deg);
+  border: 0.25rem solid white;
+}
+.img4 {
+  position: absolute; /* Konumlandırma için gerekli */
+  top: 48%;
+  left: 66%;
+  z-index: 2; /* Ağacın üstünde görünmesi için */
+  width: 6rem;
+  transform: rotate(15deg);
+  border: 0.25rem solid white;
+}
+.img5 {
+  position: absolute; /* Konumlandırma için gerekli */
+  top: 7%;
+  left: 40%;
+  z-index: 2; /* Ağacın üstünde görünmesi için */
+  width: 6rem;
+  transform: rotate(-13deg);
+  border: 0.25rem solid white;
+}
+
+body {
+  height: 100dvh;
+  overflow: hidden;
+  background-color: #1c1e24;
+}
+
+.snowflake-area {
+  width: 100%;
+
+  z-index: 10;
+}
+
+.snowflake {
+  position: absolute;
+  top: 0%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: snow;
+  animation: snowfall 10s linear infinite;
+  z-index: 10;
+}
+
+.curved-text {
+  position: absolute;
+  margin-top: -12rem;
+}
+
+text {
+  fill: #ffcc00; /* Yazının rengi */
+  font-size: 2rem; /* Yazı boyutu */
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    fill: #ffcc00;
+    filter: drop-shadow(0 0 10px #ffcc00);
+  }
+  100% {
+    fill: #ff6600;
+    filter: drop-shadow(0 0 20px #ff6600);
+  }
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: translateX(calc(-1 * var(--sway-amplitude))); /* Sways left */
+  }
+  50% {
+    transform: translateX(var(--sway-amplitude)); /* Sways right */
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hehe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="snowflake-area">
+    <audio autoplay loop controls>
+      <source src="img/jingle.mp3" type="audio/mpeg" class="audio" />
+    </audio>
+    <svg
+      class="curved-text"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 800 400"
+    >
+      <!-- Path tanımı: Daha görünür hale getirmek için koordinatları güncelledik -->
+      <path id="curve" d="M50,300 C200,50 600,50 750,300" fill="transparent" />
+      <text>
+        <!-- Yazıyı tam görünür hale getirmek için hizalama ayarlandı -->
+        <textPath href="#curve" startOffset="50%" text-anchor="middle">
+          Mutlu Yıllar Seni Seviyorum
+        </textPath>
+      </text>
+    </svg>
+    <p class="tree-container">
+      <img src="img/tree.png" class="tree" /><img
+        src="img/resim1.jpeg"
+        class="img1"
+      /><img src="img/resim2.jpg" class="img2" /><img
+        src="img/resim3.jpg"
+        class="img3"
+      /><img src="img/resim4.jpg" class="img4" /><img
+        src="img/resim5.jpg"
+        class="img5"
+      />
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
